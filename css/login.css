@@ -1,0 +1,138 @@
+body{
+  background-color:#1A1D29;
+  background-image: url(photos/logo.png);
+  background-size: 15% 15%;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+}
+/*right side*/
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 190px;
+    margin-right: 60px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+.button-box{
+    width: 206px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px 3px rgb(202, 202, 202);
+    border-radius: 30px;
+}
+.btn{
+    padding: 10px 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, slateblue, #4797ed, #6fcded);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px; 
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, slateblue, #4797ed, #6fcded);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    font-size: 13px;
+    bottom: 60px;
+}
+
+/*left side */
+  .sticky {
+    margin-left: -150px;
+    overflow: hidden;
+    width: auto;
+    height: 50vw;
+  }
+  .first {
+    animation: bannermove 100s linear infinite;
+  }
+  img {
+    padding-bottom: 10px;
+    width: 480px;
+    height: 720px;
+    display: block;
+  }
+  @keyframes bannermove {
+    0% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -15000px;
+    }
+  }
+
+/*modal*/
+
+/* Important part */
+.modal-dialog{
+  overflow-y: initial !important
+}
+.modal-body{
+  height: 50vh;
+  overflow-y: auto;
+}
+/* mobile */
+
+@media screen and (max-width:640px){
+  /*design for screen-width >= 640px */
+  .sticky{
+    margin: 6% auto;
+  }
+  .form-box{
+    margin: 6% auto;
+  }
+}
