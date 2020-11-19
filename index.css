@@ -1,0 +1,108 @@
+body{
+  background-color: #1A1D29;
+  background-image: url(photos/logo.png);
+  background-size: 15% 10%;
+  background-repeat: no-repeat;
+  background-position:bottom right;
+}
+
+.top_area{
+    overflow: hidden;
+}
+
+.jumbotron{
+color:white;
+background-color: #1A1D29;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+    
+}
+hr {
+
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+.full-width {
+    overflow: hidden;
+}
+/* text after top */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dash2{
+    text-align: center;
+    font-size: 45px;
+
+}
+.dash3{
+    flex-direction: row;
+    box-sizing: border-box;
+    /*place-content: stretch center;
+    align-items: stretch;*/
+    max-width: 100%;
+    padding: 0px 15%
+}
+.col{
+    box-sizing: border-box;
+    margin-right: 20px;
+    max-width: 33%;
+}
+.card{
+    border: 0px;
+}
+.circle{
+    width: 90px;
+    border-radius: 50%;
+    -webkit-transform: translate(0,-30%);
+    transform: translate(0,-30%);
+    height: 89px;
+    color: #fff;
+    margin: 0 auto;
+}
+.circle1{
+    line-height: 1;
+    font-size: 40px;
+    position: absolute;
+    left: 33px;
+    top: 25px;
+    font-weight: 700;
+}
+/* banner perk */
+.container2 {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 180px;
+}
+.banner_perk{
+  background-color: #F2F2F2;
+  }
+.banner{
+max-width: 100%;
+height: auto;
+}
+
+@media (min-width: 576px){
+  .jumbotron {
+      padding: 5rem 17rem;
+  }
+      .dash2 {
+        flex-basis: 100%;
+        order: 1;
+      }
+      .dash3 {
+        flex-basis: 100%;
+        order: 3;
+      }
+}
+
+@media only screen and (max-width: 1280px){
+.css-1oecwdf {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}}
