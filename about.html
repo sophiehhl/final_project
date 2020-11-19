@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/about.css">
+    <title>CIS 3110</title>
+  </head>
+  <body onload="checkCookie()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">Disney X</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://s3-us-west-1.amazonaws.com/cis3110.01blancajacobofall2020/Product.html">Purchase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navlogin" href="/login.html" style="display: inline-block;">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="account" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none;">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="logout" onclick="logout()">Log Out</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://s3-us-west-1.amazonaws.com/cis3110.01blancajacobofall2020/Contact+Us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container marketing">
+      <div class="jumbotron">
+        <h1 class="display-4">Disney X</h1>
+        <p class="lead">gives you more of your favorite movies for you to remember.</p>
+        <hr class="my-4">
+        <p>For a limited time, we are having physical copies of movies delivered.</p>
+        <a class="btn btn-primary btn-lg" href="/login.html" role="button">Join Us</a>
+      </div>
+
+    
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">For Movie Lovers.<br/> <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">At the Disney X, we love movies just like you do. We believe in the power of movies to inspire, entertain and connect us with family and friends. That's why we want to be sure you find the movies that are exactly right for you, whether it's Disney classics, Pixar, Marvel or Star Wars movies. And to help you get more of them, we'll give you great deals every day.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/408x408/auto" alt="408x408" style="width: 408px; height: 408px;" src="/photos/about-image1.jpg" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Gifts & Surprises.<br/> <span class="text-muted">Oh yeah, it's that good.</span></h2>
+          <p class="lead">You'll also get exclusive merchandise and free gifts. Each month you can receive a free lithograph from your favorite movies. Then you will get surprise gifts during the year. When you become a VIP, you can get collectible pins with your movie purchases.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/408x408/auto" alt="408x408" src="/photos/about-image2.jpg" data-holder-rendered="true" style="width: 408px; height: 408px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">What are Your Favorite Movies?
+            </h2>
+          <p class="lead">Does your Disney movie list include Moana, Frozen, Zootopia, Cinderella or Beauty and the Beast? How about Coco, Finding Dory or Toy Story movies? Or maybe you’re more into Guardians of the Galaxy, The Avengers, Captain America, Thor or Iron Man movies.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/408x408/auto" alt="408x408" src="/photos/about-image3.jpg" data-holder-rendered="true" style="width: 408px; height: 408px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Disney X
+            </h2>
+          <p class="lead">Whatever kinds of movies you love, you'll get great deals and discounts on Disney DVDs or Blu-ray™ discs and digital purchases that are only offered to members. Anytime you need us, we're here to help you with personalized service and recommendations tailored just for you. Join our family, and discover the fun and convenience of belonging to Disney X.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/408x408/auto" alt="408x408" src="/photos/about-image5.jpg" data-holder-rendered="true" style="width: 408px; height: 408px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+      <footer class="container">
+        <p><a href="#">Back to top</a></p>
+        <br/>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <script>
+      function setCookie(cname,cvalue,exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+      var expires = "expires=" + d.toGMTString();
+      document.cookie = cname+"="+cvalue+"; "+expires;
+      }
+      function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0; i<ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1);
+          if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+          }
+      }
+      return "";
+      }
+      function checkCookie() {
+        for (var i = 1; i < 2; i++) {
+          var submit =getCookie("clear"+ i);
+          if (submit != "") {
+            document.getElementById("account").style.display = "inline-block";
+            document.getElementById("navlogin").style.display = "none";
+          }
+        }
+        }
+      
+        function logout(){
+        var submit = getCookie("clear1")
+        submit = "";
+        setCookie("clear1", submit, 30);
+        logoutAlert();
+      }
+      function logoutAlert()
+        {
+          alert ("You have logged out!");
+          window.location.reload();
+        
+        }
+      </script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
