@@ -65,7 +65,7 @@ function logout(){
   function loginAlert()
   {
     alert ("You're logged in! Please wait to be redirected to the homepage or click on home.");
-    window.location.href = "../final/index.html";
+    window.location.href = "/final_project/index.html";
 	
   }
   function registeredAlert()
