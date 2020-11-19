@@ -1,0 +1,50 @@
+body{
+    background-color:#1A1D29;
+    background-image: url(photos/logo.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position:bottom right;
+}
+
+.container{
+    background-color: white;
+    padding: 0px 50px;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+.featurette-image{
+   width:100%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+
+.lead {
+    font-size: 1.05rem;
+}
+
+
+
+@media (min-width: 62em){
+.featurette-heading {
+    margin-top: 7rem;
+}
+}
+@media (min-width: 40em){
+.featurette-heading {
+    font-size: 50px;
+}
+}
+
