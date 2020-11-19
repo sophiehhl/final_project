@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css">
+    <title>CIS 3110</title>
+  </head>
+  <body onload="checkCookie()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">Disney X</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://s3-us-west-1.amazonaws.com/cis3110.01blancajacobofall2020/Product.html">Purchase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navlogin" href="/login.html" style="display: inline-block;">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="account" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none;">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="logout" onclick="logout()">Log Out</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://s3-us-west-1.amazonaws.com/cis3110.01blancajacobofall2020/Contact+Us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class = "top_area">
+  <div class="jumbotron">
+    <h1 class="display-4">Disney X</h1>
+    <p class="lead">Watch your favorite movies at home whenever, wherever. </p>
+    <hr class="my-4">
+    <p>Have the option of your favorite movie ready on demand.</p>
+    <a class="btn btn-primary btn-lg" href="/about.html" role="button">Learn more</a>
+  </div>
+  
+      <img class="full-width" src="/photos/carousel.jpg">
+</div>
+<div style ="background-color: #fff;">
+    <div class ="container-fluid">
+      <div class ="container dash2">
+        <span class="display-4"><strong>Own The Movies</strong><br/>You Love Forever</div></span>
+      </div>
+    <div class ="container dash3">
+    <div class="card-deck">
+      <div class="card">
+        <br/>
+        <div class="card-body">
+          <div class="circle" style="background-color: #e01c7e;"><span class="circle1">1</span></div>
+          <p class="card-text"> Create memories that last a lifetime. We'll help you get started with 4 Disney movies for just $1 in the beginning, and you agree to purchase 5 titles starting at $19.95 with Membership.</p>
+        </div>
+
+      </div>
+      <div class="card">
+        <br/>
+        <div class="card-body">
+          <div class="circle" style="background-color: rgb(32, 175, 132);"><span class="circle1">2</span></div>
+          <p class="card-text">Every 4 weeks or so, we’ll offer you the most anticipated Disney movies. If you don’t want it, you may decline it or choose a different movie.</p>
+        </div>
+
+      </div>
+      <div class="card">
+        <br/>
+        <div class="card-body">
+          <div class="circle" style="background-color: #3891cc;"><span class="circle1" >3</span></div>
+          <p class="card-text">We’ll make sure you get the best deals on your favorite Disney movies. You’ll get big discounts, as much as 50% off, plus gifts all along the way.</p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class = "banner_perk">
+  <div class = "container2">
+    <img class = "banner" src="/photos/member.jpg"></div>
+  </div>
+
+
+<!-- Optional JavaScript -->
+<script>
+function setCookie(cname,cvalue,exdays) {
+var d = new Date();
+d.setTime(d.getTime() + (exdays*24*60*60*1000));
+var expires = "expires=" + d.toGMTString();
+document.cookie = cname+"="+cvalue+"; "+expires;
+}
+function getCookie(cname) {
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1);
+    if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+    }
+}
+return "";
+}
+function checkCookie() {
+  for (var i = 1; i < 2; i++) {
+    var submit =getCookie("clear"+ i);
+    if (submit != "") {
+      document.getElementById("account").style.display = "inline-block";
+      document.getElementById("navlogin").style.display = "none";
+    }
+  }
+  }
+
+  function logout(){
+  var submit = getCookie("clear1")
+  submit = "";
+  setCookie("clear1", submit, 30);
+  logoutAlert();
+}
+function logoutAlert()
+  {
+    alert ("You have logged out!");
+    window.location.reload();
+	
+  }
+</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
