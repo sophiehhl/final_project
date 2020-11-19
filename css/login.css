@@ -26,7 +26,7 @@ body{
 }
 .button-box{
     width: 206px;
-    margin: 35px auto;
+    margin: 25px auto;
     position: relative;
     box-shadow: 0 0 10px 3px rgb(202, 202, 202);
     border-radius: 30px;
@@ -51,7 +51,7 @@ body{
 }
 
 .input-group{
-    top: 150px;
+    top: 120px;
     position: absolute;
     width: 280px;
     transition: .5s;
